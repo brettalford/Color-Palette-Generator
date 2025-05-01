@@ -18,8 +18,15 @@
 }
 
 
+
+
+
+
+
 #sidebar{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
     top: 0;
     left: 0;
     width: 15vw;
@@ -27,19 +34,55 @@
     border: black 1px solid;
     z-index: 2;
     background-color: wheat;
+    justify-content: flex-start;
+    padding-top: 1.5vh;
+    padding-left: 2vh;
+    gap: 3vh;
+}
+
+.sidebox{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 7%;
+    border: black 1px solid;
+    align-items: center;
+    border-radius: 15px;
     
 }
+
+.hex{
+    border: black 1px solid;
+    width: 65%;
+    height: 100%;
+}
+.lock{
+    border: black 1px solid;
+    width: 22.5%;
+    height: 100%;
+}
+.star{
+    border: black 1px solid;
+    width: 22.5%;
+    height: 100%;
+}
+
+
+
+
+
+
 
 
 
 
 #display {
     background-color: black;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     border: 1px black solid;
     z-index: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
   }
@@ -53,9 +96,12 @@
     position: absolute;
     top: 18vh;
     left: 20vw;
+    border-radius: 10px;
   }
 
   #colors{
+    display: flex;
+    justify-content: space-evenly;
     background-color: red;
     height: 55vh;
     width: 66.8vw;
@@ -66,8 +112,21 @@
     left: 4vw;
   }
 
+
+
+.color{
+    display: flex;
+    border: black 1px solid;
+    z-index: 2;
+    width: 20%;
+    height: 100%;
+}
+
+
+
+
   #textbox{
-    background-color: white;
+    background-color: #fff8d2;
     height: 9vh;
     width: 66.8vw;
     border: 1px black solid;
@@ -83,14 +142,4 @@
     margin-right: 2vw;
   }
 
-  .sidebox{
-    background-color: white;
-    height: 9vh;
-    width: 66.8vw;
-    border: 1px black solid;
-    z-index: 0;
-    position: absolute;
-    top: 62vh;
-    left: 4vw;
-    border-radius: 5px;
-  }
+  
