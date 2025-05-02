@@ -8,13 +8,13 @@
     left: 0;
     width: 100vw;
     height: 10vh;
-    border: black 1px solid;
     z-index: 1;
-    background-color: white;
+    background-color: #20273b;
 }
 
 #navbar h1{
     margin-left: 50vw;
+    color: white;
 }
 
 
@@ -31,13 +31,12 @@
     left: 0;
     width: 18vw;
     height: 100vh;
-    border: black 1px solid;
     z-index: 2;
-    background-color: wheat;
+    background-color: #20273b;
     justify-content: flex-start;
-    padding-top: 1.5vh;
+    padding-top: 1.2vh;
     padding-left: .5vh;
-    gap: 3vh;
+    gap: 4vh;
 }
 
 .sidebox{
@@ -75,7 +74,8 @@
   height: 45%;
   border-radius: 5px;
   top:10%;
-  border: none;
+  border: 1px solid rgba(0,0,0,.5);
+  background-color: #f5f5f5;
 }
 
 .lock img{
@@ -105,6 +105,21 @@ button{
   width: 100%;
   height: 100%;
   border-radius:15px;
+  border: 1px solid rgba(125,125,125,.9);
+}
+
+#lockbutton1,#lockbutton2,#lockbutton3,#lockbutton4,#lockbutton5{
+  border-radius: 0px;
+  border-top:transparent;
+  border-bottom: transparent;
+}
+
+#starbutton1,#starbutton2,#starbutton3,#starbutton4,#starbutton5{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top:transparent;
+  border-bottom: transparent;
+  border-left: transparent;
 }
 
 
@@ -114,10 +129,8 @@ button{
 
 
 
-
-
 #display {
-    background-color: black;
+    background-color: #2d354a;
     height: 100%;
     width: 100vw;
     border: 1px black solid;
@@ -128,7 +141,7 @@ button{
   }
 
   #mainwindow{
-    background-color: gray;
+    background-color: #20273b;
     height: 73vh;
     width: 75vw;
     border: 1px black solid;
@@ -142,7 +155,6 @@ button{
   #colors{
     display: flex;
     justify-content: space-evenly;
-    background-color: red;
     height: 55vh;
     width: 66.8vw;
     border: 1px black solid;
@@ -156,17 +168,42 @@ button{
 
 .color{
     display: flex;
-    border: black 1px solid;
     z-index: 2;
     width: 20%;
     height: 100%;
 }
 
+#c1{
+  background-color: rgb(110, 21, 147);
+}
+
+#c2{
+  background-color: rgb(29, 50, 21);
+}
+
+#c3{
+  background-color: rgb(15, 21, 108);
+}
+
+#c4{
+  background-color: green;
+}
+
+#c5{
+  background-color: brown;
+}
+
+
+
+
+
+
+
 
 
 
   #textbox{
-    background-color: #fff8d2;
+    background-color: antiquewhite;
     height: 9vh;
     width: 66.8vw;
     border: 1px black solid;
@@ -180,6 +217,11 @@ button{
   #textbox p{
     margin-left: 2vw;
     margin-right: 2vw;
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,.5);
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
   }
 
  

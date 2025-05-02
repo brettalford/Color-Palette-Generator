@@ -9,46 +9,12 @@ function numgen(){
         let num=Math.floor(Math.random()*( max -min+1))+min;
         numbers.push(num)
     }
-    //console.log(numbers)
-
-    //colchange1(numbers)
-    //complementary(numbers)
+    
 
     return numbers
 
 
 }
-
-
-function colchange1(colorlist){
-    for(let i =2;i>=0;i--){
-        colorlist[i]+=255;
-        if (colorlist[i]>255){
-            colorlist[i]-=128;
-        }
-        if (colorlist[i]>255){
-            colorlist[i]-=128;
-        }
-        
-    }
-
-    console.log(colorlist);
-
-}
-
-
-function complementary(colorlist){
-    for(let i =2;i>=0;i--){
-        if(colorlist[i]>127){
-            colorlist[i]-=127
-        }
-        else{
-            colorlist[i]+=127
-        }
-    }
-    console.log(colorlist)
-}
-
 
 
 function rgbToHsl(rgb) {
@@ -177,6 +143,144 @@ function rgbToHex(rgb){
     console.log(hex)
     return hex;
 }
+
+
+
+//OKAY SO THE LOGIC PART FOR COLOR ASSOCIATION IS DONE, BUTTON TIME
+
+
+//So many things need to be put in im going to go crazy
+
+const hex1=document.querySelector("#hex1");
+const hex2=document.querySelector("#hex2");
+const hex3=document.querySelector("#hex3");
+const hex4=document.querySelector("#hex4");
+const hex5=document.querySelector("#hex5");
+
+const lockbutton1=document.querySelector("lockbutton1");
+const lockbutton2=document.querySelector("lockbutton2");
+const lockbutton3=document.querySelector("lockbutton3");
+const lockbutton4=document.querySelector("lockbutton4");
+const lockbutton5=document.querySelector("lockbutton5");
+
+const lockimg1=document.querySelector("lockimg1");
+const lockimg2=document.querySelector("lockimg2");
+const lockimg3=document.querySelector("lockimg3");
+const lockimg4=document.querySelector("lockimg4");
+const lockimg5=document.querySelector("lockimg5");
+
+const starbutton1=document.querySelector("starbutton1");
+const starbutton2=document.querySelector("starbutton2");
+const starbutton3=document.querySelector("starbutton3");
+const starbutton4=document.querySelector("starbutton4");
+const starbutton5=document.querySelector("starbutton5");
+
+const starimg1=document.querySelector("starimg1");
+const starimg2=document.querySelector("starimg2");
+const starimg3=document.querySelector("starimg3");
+const starimg4=document.querySelector("starimg4");
+const starimg5=document.querySelector("starimg5");
+
+const complementary=document.querySelector("#complementary");
+const clashing=document.querySelector("#clashing");
+const analo=document.querySelector("#analo");
+const random=document.querySelector("#random");
+
+const c1=document.querySelector("#c1");
+const c2=document.querySelector("#c2");
+const c3=document.querySelector("#c3");
+const c4=document.querySelector("#c4");
+const c5=document.querySelector("#c5");
+
+
+
+
+lockbutton1.onclick=locking(1);
+lockbutton2.onclick=locking(2);
+lockbutton3.onclick=locking(3);
+lockbutton4.onclick=locking(4);
+lockbutton5.onclick=locking(5);
+
+function locking(starnum){
+    switch(starnum){
+        case 1:
+        
+        break;
+        case 2:
+        
+        break;
+        case 3:
+        
+        break;
+        case 4:
+        
+        break;
+        case 5:
+        
+        break;
+        default:
+        break;
+    }
+}
+
+starbutton1.onclick=staring(1);
+starbutton2.onclick=staring(2);
+starbutton3.onclick=staring(3);
+starbutton4.onclick=staring(4);
+starbutton5.onclick=staring(5);
+
+function staring(locknum){
+    switch(locknum){
+        case 1:
+        
+        break;
+        case 2:
+        
+        break;
+        case 3:
+        
+        break;
+        case 4:
+        
+        break;
+        case 5:
+        
+        break;
+        default:
+        break;
+    }
+}
+
+
+complementary.onclick=compl;
+
+function compl(){
+
+
+}
+
+clashing.onclick=clash;
+
+function clash(){
+
+}
+
+analo.onclick=analog;
+
+function analog(){
+
+}
+
+
+random.onclick=randy;
+
+function randy(){
+
+}
+
+
+
+
 
 
 
