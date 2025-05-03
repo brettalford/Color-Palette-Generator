@@ -1,13 +1,12 @@
 
 
-
 *{
   font-family: 'Crimson Text', serif;
 }
 
 #navbar{
     position: fixed;
-    top: 0;
+    top: .6vw;
     left: 0;
     width: 100vw;
     height: 9vh;
@@ -17,12 +16,12 @@
 
 #navbar h1{
     font-family: 'Crimson Text', serif;
-    margin-left: 63vw;
+    margin-left: 41vw;
     color: white;
     letter-spacing: 1.7vw;
     font-style: italic;
     font-size: 4vw;
-    top:0;
+    top:7vw;
     margin-top: 0;
     
 }
@@ -133,6 +132,14 @@ button{
   border-bottom: transparent;
 }
 
+button:active {
+  transform: translateY(1px); /* Simulates pressing down */
+}
+
+
+
+
+
 #starbutton1,#starbutton2,#starbutton3,#starbutton4,#starbutton5{
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -149,7 +156,7 @@ button{
 
 
 #display {
-    background-color: #2d354a;
+    background-color: /*#2d354a*/#20273b;
     height: 100%;
     width: 100vw;
     border: 1px black solid;
@@ -160,26 +167,25 @@ button{
   }
 
   #mainwindow{
-    background-color: #20273b;
-    height: 79vh;
-    width: 75vw;
-    border: 1px black solid;
+    background-color: #eaeaea;
+    height: 83vh;
+    width: 78vw;
+    border: 2px black solid;
     z-index: 0;
     position: absolute;
-    top: 14vh;
-    left: 21.5vw;
+    top: 11.5vh;
+    left: 20vw;
     border-radius: 10px;
   }
 
   #colors{
     display: flex;
     justify-content: space-evenly;
-    height: 58vh;
-    width: 68vw;
-    border-right: 1px black solid;
+    height: 74.4vh;
+    width: 74vw;
     position: absolute;
-    top: 5vh;
-    left: 3.4vw;
+    top: 4.3vh;
+    left: 1.87vw;
   }
 
 
@@ -221,16 +227,16 @@ button{
 
 
 
-
+/*
   #textbox{
     background-color: antiquewhite;
     height: 9vh;
-    width: 68vw;
+    width: 72vw;
     border: 1px black solid;
     z-index: 0;
     position: absolute;
-    top: 65vh;
-    left: 3.4vw;
+    top: 68.7vh;
+    left: 3vw;
     border-radius: 5px;
   }
 
@@ -243,5 +249,4 @@ button{
     border-radius: 5px;
     text-align: center;
   }
-
- 
+*/

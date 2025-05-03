@@ -95,7 +95,7 @@ function getAnalogousColor1(rgb) {
 // Analogous color 2 (~-30° shift)
 function getAnalogousColor2(rgb) {
     let [h, s, l] = rgbToHsl(rgb);
-    h = (h - 30 + 360) % 360;
+    h = (h - 25 + 360) % 360;
     h = addHueRandomness(h);
     return hslToRgb(h, s, l);
 }
@@ -369,28 +369,4 @@ function syncColorsWithHexInputs() {
 
 randy();
 syncColorsWithHexInputs();
-
-
-/*
-// Example usage:
-const input = numgen()
-console.log("Original RGB:", input);
-console.log("Complementary:", getComplementaryColor(input));
-console.log("Analogous:", getAnalogousColor(input));
-console.log("Opposing (Clashing):", getClashingColor(input));
-
-console.log("random");
-randy();
-console.log("analogous");
-analog();
-console.log("clashing");
-clash();
-console.log("complementary");
-compl();
-
-//this will hold the initial randomized color
-let colorInitGen=[]
-//hexToRGB()
-//rgbToHex([0,25,210])
-*/
 
