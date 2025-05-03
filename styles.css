@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 10vh;
+    height: 7vh;
     z-index: 1;
     background-color: #20273b;
 }
@@ -142,26 +142,26 @@ button{
 
   #mainwindow{
     background-color: #20273b;
-    height: 73vh;
+    height: 79vh;
     width: 75vw;
     border: 1px black solid;
     z-index: 0;
     position: absolute;
-    top: 18vh;
-    left: 22vw;
+    top: 14vh;
+    left: 21.5vw;
     border-radius: 10px;
   }
 
   #colors{
     display: flex;
     justify-content: space-evenly;
-    height: 55vh;
-    width: 66.8vw;
+    height: 58vh;
+    width: 68vw;
     border: 1px black solid;
     z-index: 0;
     position: absolute;
     top: 5vh;
-    left: 4vw;
+    left: 3.4vw;
   }
 
 
@@ -205,12 +205,12 @@ button{
   #textbox{
     background-color: antiquewhite;
     height: 9vh;
-    width: 66.8vw;
+    width: 68vw;
     border: 1px black solid;
     z-index: 0;
     position: absolute;
-    top: 62vh;
-    left: 4vw;
+    top: 65vh;
+    left: 3.4vw;
     border-radius: 5px;
   }
 

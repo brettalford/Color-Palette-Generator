@@ -136,6 +136,7 @@ function rgbToHex(rgb){
         hex+=(charsofhex[(parseInt(rgb[i]/16))]);
         hex+=(charsofhex[(rgb[i]%16)]);
     }
+    console.log(hex)
     return hex;
 }
 
@@ -146,17 +147,60 @@ function rgbToHex(rgb){
 
 //So many things need to be put in im going to go crazy
 
-let locked=[false,false,false,false,false];
-let starred=numgen();
+const hex1=document.getElementById("hex1");
+const hex2=document.getElementById("hex2");
+const hex3=document.getElementById("hex3");
+const hex4=document.getElementById("hex4");
+const hex5=document.getElementById("hex5");
+
+const lockbutton1=document.getElementById("lockbutton1");
+const lockbutton2=document.getElementById("lockbutton2");
+const lockbutton3=document.getElementById("lockbutton3");
+const lockbutton4=document.getElementById("lockbutton4");
+const lockbutton5=document.getElementById("lockbutton5");
+
+const lockimg1=document.getElementById("lockimg1");
+const lockimg2=document.getElementById("lockimg2");
+const lockimg3=document.getElementById("lockimg3");
+const lockimg4=document.getElementById("lockimg4");
+const lockimg5=document.getElementById("lockimg5");
+
+let locked=[0,0,0,0,0];
+
+
+const starbutton1=document.getElementById("starbutton1");
+const starbutton2=document.getElementById("starbutton2");
+const starbutton3=document.getElementById("starbutton3");
+const starbutton4=document.getElementById("starbutton4");
+const starbutton5=document.getElementById("starbutton5");
+
+const starimg1=document.getElementById("starimg1");
+const starimg2=document.getElementById("starimg2");
+const starimg3=document.getElementById("starimg3");
+const starimg4=document.getElementById("starimg4");
+const starimg5=document.getElementById("starimg5");
+
+const complementary=document.getElementById("complementary");
+const clashing=document.getElementById("clashing");
+const analo=document.getElementById("analo");
+const random=document.getElementById("random");
+
+const c1=document.getElementById("c1");
+const c2=document.getElementById("c2");
+const c3=document.getElementById("c3");
+const c4=document.getElementById("c4");
+const c5=document.getElementById("c5");
 
 
 
 
+lockbutton1.onclick=locking(1);
+lockbutton2.onclick=locking(2);
+lockbutton3.onclick=locking(3);
+lockbutton4.onclick=locking(4);
+lockbutton5.onclick=locking(5);
 
-//only one can be starred, when starred the rgb of that (c1,c2,c3,c4, or c5) become the starred value and icon image is changed to its
-//counterpart so that only one can be starred at a time, this starring is used as a way to select which color the analogous, 
-//set by default to c1
-function staring(starnum){
+function locking(starnum){
     switch(starnum){
         case 1:
         
@@ -178,10 +222,13 @@ function staring(starnum){
     }
 }
 
+starbutton1.onclick=staring(1);
+starbutton2.onclick=staring(2);
+starbutton3.onclick=staring(3);
+starbutton4.onclick=staring(4);
+starbutton5.onclick=staring(5);
 
-
-//locking/unlocking changes the icon and prevents the colors of those versions from being changed without being unlocked
-function locking(locknum){
+function staring(locknum){
     switch(locknum){
         case 1:
         
@@ -204,74 +251,62 @@ function locking(locknum){
 }
 
 
+complementary.onclick=compl;
 
 function compl(){
-    let holdclash;
-    console.log(rgbToHex(starred));
-    for(let i=0;i<=4;i++){
-        if(locked[i] != true){
-            holdclash=rgbToHex(getComplementaryColor(starred));
-            console.log(holdclash);
-    }
-    }
+
 
 }
 
+clashing.onclick=clash;
 
 function clash(){
-    let holdclash;
-    console.log(rgbToHex(starred));
-    for(let i=0;i<=4;i++){
-        if(locked[i] != true){
-            holdclash=rgbToHex(getClashingColor(starred));
-            console.log(holdclash);
-    }
-    }
+
 }
 
+analo.onclick=analog;
 
 function analog(){
-    let holdana;
-    console.log(rgbToHex(starred));
-    for(let i=0;i<=4;i++){
-        if(locked[i] != true){
-            holdana=rgbToHex(getAnalogousColor(starred));
-            console.log(holdana);
-    }
-    }
-}
 
-function randy(){
-    let holdrand;
-    const elements=[c1,c2,c3,c4,c5]
-    for(let i=0;i<=4;i++){
-        if(locked[i] != true){
-            holdrand=rgbToHex(numgen());
-            elements[i].style.backgroundColor=holdrand;
-            console.log(`Assigned to c${i + 1}: ${holdrand}`);
-    }
-    }
 }
 
 
-
-
-
-const c1=document.getElementById("c1");
-const c2=document.getElementById("c2");
-const c3=document.getElementById("c3");
-const c4=document.getElementById("c4");
-const c5=document.getElementById("c5");
-
-
-
-const random=document.getElementById("random");
 random.onclick=randy;
 
+function randy(){
+    let hold;
+    for(let i=0;i<=4;i++){
+        switch (i){
+            case 1:
+                if(locked[i] != true){
+                    hold=rgbToHex(numgen());
+                    c1.style;
+                }
+            break;
+
+            case 2:
+            break;
+
+            case 3:
+            break;
+
+            case 4:
+            break;
+
+            case 5:
+            break;
+        }
+    }
+
+
+}
 
 
 
-/*
+
+
+
+
 // Example usage:
 const input = numgen()
 console.log("Original RGB:", input);
@@ -279,18 +314,9 @@ console.log("Complementary:", getComplementaryColor(input));
 console.log("Analogous:", getAnalogousColor(input));
 console.log("Opposing (Clashing):", getClashingColor(input));
 
-console.log("random");
-randy();
-console.log("analogous");
-analog();
-console.log("clashing");
-clash();
-console.log("complementary");
-compl();
+
 
 //this will hold the initial randomized color
 let colorInitGen=[]
 //hexToRGB()
 //rgbToHex([0,25,210])
-*/
-
