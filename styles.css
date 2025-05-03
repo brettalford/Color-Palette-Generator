@@ -1,25 +1,37 @@
 
 
 
+*{
+  font-family: 'Crimson Text', serif;
+}
 
 #navbar{
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 7vh;
+    height: 9vh;
     z-index: 1;
     background-color: #20273b;
 }
 
 #navbar h1{
-    margin-left: 50vw;
+    font-family: 'Crimson Text', serif;
+    margin-left: 63vw;
     color: white;
+    letter-spacing: 1.7vw;
+    font-style: italic;
+    font-size: 4vw;
+    top:0;
+    margin-top: 0;
+    
 }
 
 
 
-
+.lowbut{
+  font-size: 1.3vw;
+}
 
 
 
@@ -42,12 +54,13 @@
 .sidebox{
     display: flex;
     flex-direction: row;
-    width: 97%;
+    width: 94%;
     height: 7%;
     border: black 1px solid;
     align-items: center;
     border-radius: 15px;
     background-color: antiquewhite;
+    margin-left: .2vw;
     
 }
 
@@ -59,7 +72,11 @@
     justify-content: center;
     border-radius: 15px;
     top: 0;
+    font-size: 100%;
 }
+
+
+
 .lock{
     width: 22%;
     height: 100%;
@@ -71,11 +88,13 @@
 
 .hexin{
   width: 90%;
-  height: 45%;
+  height: 50%;
   border-radius: 5px;
   top:10%;
   border: 1px solid rgba(0,0,0,.5);
   background-color: #f5f5f5;
+  font-size: 1vw;
+  letter-spacing: .03vw;
 }
 
 .lock img{
@@ -157,8 +176,7 @@ button{
     justify-content: space-evenly;
     height: 58vh;
     width: 68vw;
-    border: 1px black solid;
-    z-index: 0;
+    border-right: 1px black solid;
     position: absolute;
     top: 5vh;
     left: 3.4vw;
@@ -171,26 +189,28 @@ button{
     z-index: 2;
     width: 20%;
     height: 100%;
+    z-index: 0;
+    /*border: 1px solid rgba(60,60,60,.5);*/
 }
 
 #c1{
-  background-color: rgb(110, 21, 147);
+  background-color: #6e1593;
 }
 
 #c2{
-  background-color: rgb(29, 50, 21);
+  background-color: #1d3215;
 }
 
 #c3{
-  background-color: rgb(15, 21, 108);
+  background-color: #0f156c;
 }
 
 #c4{
-  background-color: green;
+  background-color: #008000;
 }
 
 #c5{
-  background-color: brown;
+  background-color: #a52a2a;
 }
 
 
