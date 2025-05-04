@@ -55,7 +55,6 @@
     flex-direction: row;
     width: 94%;
     height: 7%;
-    border: black 1px solid;
     align-items: center;
     border-radius: 15px;
     background-color: antiquewhite;
@@ -102,7 +101,6 @@
   border: none;
   align-self: center;
   object-fit: contain;
-  left: 50%;
 }
 
 .star img{
