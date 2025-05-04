@@ -121,7 +121,7 @@ button{
   width: 100%;
   height: 100%;
   border-radius:15px;
-  border: 1px solid rgba(125,125,125,.9);
+  border: none;
 }
 
 #lockbutton1,#lockbutton2,#lockbutton3,#lockbutton4,#lockbutton5{
