@@ -1,4 +1,53 @@
+@media (max-width: 768px) {
+  #navbar {
+    height: 8vh;
+  }
 
+  #navbar h1 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 6vw;
+    letter-spacing: 0.8vw;
+  }
+
+  #sidebar {
+    width: 100vw;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1vh 0;
+    position: static;
+  }
+
+  .sidebox {
+    flex-direction: column;
+    width: 18vw;
+    height: auto;
+    margin-left: 0;
+    font-size: 3vw;
+  }
+
+  .hexin {
+    font-size: 3vw;
+  }
+
+  .lock,
+  .star {
+    width: 100%;
+    height: auto;
+  }
+
+ 
+
+  .lowbut {
+    font-size: 3vw;
+  }
+
+  .hexin {
+    width: 95%;
+    height: 4vh;
+  }
+}
 
 *{
   font-family: 'Crimson Text', serif;
@@ -121,7 +170,7 @@ button{
   width: 100%;
   height: 100%;
   border-radius:15px;
-  border: none;
+  border: 1px solid rgba(125,125,125,.9);
 }
 
 #lockbutton1,#lockbutton2,#lockbutton3,#lockbutton4,#lockbutton5{
