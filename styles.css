@@ -10,6 +10,21 @@
     letter-spacing: 0.8vw;
   }
 
+  #profile-link3 {
+    height: 2vw;
+    width: 2vw;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    z-index: 4;
+  }
+
+  #profile-link3 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
   #sidebar {
     width: 100vw;
     height: auto;
